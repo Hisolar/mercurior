@@ -347,7 +347,7 @@
     }
 
     .ct-flex {
-        display: flex;
+        display: block;
         justify-content: space-between;
     }
 

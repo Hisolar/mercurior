@@ -31,13 +31,13 @@
     }
 
     .header-content {
-        width: 70%;
+        width: 100%;
         background-color: purple;
     }
 
     .header-content h1 {
-        width: 85%;
-        font-size: var(--heading)
+        width: 100%;
+        font-size: 1rem
     }
 
     .header-image {
@@ -63,8 +63,9 @@
     }
 
     .main {
-        padding: var(--padding);
-        display: flex;
+        /* padding: var(--padding); */
+        display: block;
+        padding: 1rem;
         align-items: center;
         width: 100%;
         gap: 2rem;
@@ -222,7 +223,7 @@
 
     .sh-img1 {
         background-image: url(../../images/16\ Valleycrest\ Drive-120.jpg);
-        width: 400px;
+        max-width: 100%;
         height: 200px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -239,7 +240,7 @@
 
     .sh-img2 {
         background-image: url(../../images/16\ Valleycrest\ Drive-102.jpg);
-        width: 400px;
+        max-width: 100%;
         height: 200px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -265,7 +266,7 @@
 
     .wht-img {
         background-image: url(../../images/architecture.jpg);
-        width: 600px;
+        max-width: 100%;
         height: 600px;
         background-repeat: no-repeat;
         background-size: cover;
@@ -292,7 +293,7 @@
 
     .blog {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
         padding-top: 1rem;
         border-top: .07rem solid gray;
