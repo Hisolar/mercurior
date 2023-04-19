@@ -32,12 +32,13 @@
 
     .header-content {
         width: 100%;
-        background-color: purple;
+        padding: 1rem;
     }
 
     .header-content h1 {
         width: 100%;
-        font-size: 3rem
+        font-size: 3rem;
+
     }
 
     .header-image {
