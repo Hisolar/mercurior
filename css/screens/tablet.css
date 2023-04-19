@@ -6,6 +6,10 @@
         --padding: 5rem;
     }
 
+    .clsfix{
+        padding: 150px;
+    }
+
     .left {
         width: 40%;
         height: 80vh;
