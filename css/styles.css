@@ -1,507 +1,111 @@
-body{
+@import "./screens/mobile.css"; 
+@import "./screens/tablet.css"; 
+@import "./screens/pc.css";  
+@import "./screens/pc_large.css";  
+
+body {
     margin: 0;
     font-family: montserrat;
 
 }
-*{
-    box-sizing: border-box;   
+
+* {
+    box-sizing: border-box;
     font-weight: 400;
 }
 
-:root{
+:root {
     --primary: #fff0e6;
 }
 
-h1{
+h1 {
     font-size: var(--heading);
     line-height: 100%;
 }
 
-h3{
+h3 {
     font-size: var(--subheading);
 }
 
-p{
-   font-size: var(--paragraph);
+p {
+    font-size: var(--paragraph);
 }
 
-nav{
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 4rem 2rem;
-position: absolute;
-width: 100%;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 2rem;
+    position: absolute;
+    width: 100%;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     /* justify-content: center; */
     gap: 1rem;
 }
 
-.logo-icon{
+.logo-icon {
     display: flex;
     align-items: center;
     gap: 1rem;
     position: relative;
 }
 
-.cycle{
+.cycle {
     background-color: transparent;
     height: 30px;
     aspect-ratio: 1;
     border: .20rem solid black;
     border-radius: 100%;
-   
+
 }
 
-.slat{
-height: 3rem;
-aspect-ratio: 1/15;
-background-color: black;
-position: absolute;
-transform: rotate(200deg);
-top: -0.5rem;
-left: 1rem;
+.slat {
+    height: 3rem;
+    aspect-ratio: 1/15;
+    background-color: black;
+    position: absolute;
+    transform: rotate(200deg);
+    top: -0.5rem;
+    left: 1rem;
 }
 
-.menu-btn{
-display: flex;
+.menu-btn {
+    display: flex;
 }
 
-.btn{
-display: grid;
-gap: 0.5rem;
+.btn {
+    display: grid;
+    gap: 0.5rem;
 }
 
-.btn div{
+.btn div {
     background-color: black;
     height: .1rem;
     aspect-ratio: 20/1;
 }
 
-.btn div + div{
+.btn div+div {
     height: .1rem;
     aspect-ratio: 15/1;
     place-self: end;
 }
 
-header{
+header {
     display: flex;
     padding-left: 2rem;
 }
 
-.bg-color{
+.bg-color {
     background-color: #fff0e6;
 }
 
-
-
-@media screen and (min-width: 1440px) {
-    :root{
-        --heading:5rem;
-        --subheading:3rem;
-        --paragraph: 1rem;
-        --padding:5rem;
-    }
-
-.left{
-width: 40%;
-height: 80vh;
-padding: 1rem;
-padding-bottom: 4rem;
-display: flex;
-align-items: flex-end;
-
-}
-
-.left p{
-    width: 50%;
-}
-
-.right{
-width: 60%;
-line-height: 100%;
-display: flex;
-justify-content: flex-end;
-align-items: center;
-/* padding-bottom: 1.5rem; */
-
-}
-.header-content{
-width: 70%;
-}
-
-.header-content h1{
-    width: 85%;
-    font-size: var(--heading)
-}
-
-.header-image{
-    background-image: url(../images/merc-header.jpg);
-    height: 60vh;
-    width: 70vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.slide-image{
-    display: flex;
-}
-.copy{
-    background-color:var(--primary);
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    width: 30vw;
-    height: 30px;
-    padding: var(--padding);
-}
-
-.main{
-    padding: var(--padding);
-    display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 2rem;
-
-}
-
-.asth{
-width: 50%;
-font-size: var(--heading);
-}
-.txt{
-    width: 50%;
-    font-size: 2rem;
-}
-.asth h1{
-    font-size: 3rem;
-}
-
-.project-wrapper{
-       padding: var(--padding);
-}
-
-.project{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
-    padding-top: 1rem;
-
-}
-
-.prjt1{
-background-image: url(../images/project1.jpg);
-width: 450px;
-height: 550px;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.prjt2{
-    background-image: url(../images/project2.jpg);
-    width: 450px;
-    height: 550px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.prjt3{
-background-image: url(../images/project1.jpg);
-width: 450px;
-height: 550px;
-background-repeat: no-repeat;
-background-size: cover;
-}
-.text-wrapper{
-    display: flex;
-}
-
-.prjt-text1{
-    text-align: center;
-}
-
-.prjt-text1 h1{
-font-size: 2rem;
-}
-
-.prjt-text2{
-    text-align: center;
-}
-.prjt-text2 h1{
-    font-size: 2rem;
-
-}
-
-.prjt-text3{
-    text-align: center;
-}
-.prjt-text3 h1{
-    font-size: 2rem;
-
-}
-
-.more-project{
-    display: flex;
-    justify-content: flex-end;
-    /* padding-right: 8rem; */
-    padding: var(--padding);
-}
-
-.more-project div h1{
-    font-size: 3rem;
-}
-
-main{
-    background-color: var(--primary);
-    width: 90vw;
-    height: 160vh;
-    /* position: relative; */
-
-}
-
-main div h1{
-    width: 48%;
-    font-size: 3rem;
-
-}
-.show{
-    padding: var(--padding);
-}
-
-.sh-wrapper{
-border-top: .07rem solid black;
-border-bottom: .07rem solid black;
-padding-top: 2rem;
-padding-bottom: 2rem;
-display: flex;
-justify-content: space-between;
-}
-
-.sh{
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-start;
-}
-
-.sh-img{
-    background-image: url(../images/merc-header.jpg);
-    width: 400px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.ri{
-    width: 50%;
-}
-
-.ri h1{
-    font-size: 2rem;
-    width: 100%;
-}
-
-.sh-wrapper1{
-    border-bottom: .07rem solid black;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
-    }
-
-.sh-img1{
-    background-image: url(../images/16\ Valleycrest\ Drive-120.jpg);
-    width: 400px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-.sh-wrapper2{
-    border-bottom: .07rem solid black;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: flex;
-    justify-content: space-between;
-    }
-
-.sh-img2{
-    background-image: url(../images/16\ Valleycrest\ Drive-102.jpg);
-    width: 400px;
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.testmony{
-    display: flex;
-    justify-content: space-between;
-
-}
-
-.wht{
-    width: 50%;
-    padding-top: 4rem;
-    padding-left: 10rem;
-}
-
-.wht h1{
-    font-size: 2rem;
-    width: 80%;
-    line-height: normal;
-}
-
-.wht-img{
-    background-image: url(../images/architecture.jpg);
-    width: 600px;
-    height: 600px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 1;
-    margin-top: -200PX;
-
-}
-.blog-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 2rem;
-}
-
-.bg-arrow{
-    display: flex;
-    align-items: center;
-}
-
-.blog-wrapper h1{
-    font-size: 2rem;
-}
-
-.blog{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 1rem;
-    padding-top: 1rem;
-    border-top: .07rem solid gray;
-
-}
-
-.blog-img1{
-background-image: url(../images/project1.jpg);
-width: 430px;
-height: 300px;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.blog-img2{
-    background-image: url(../images/project2.jpg);
-    width: 430px;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.blog-img3{
-background-image: url(../images/project1.jpg);
-width: 430px;
-height: 300px;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.blog-text1 h1{
-font-size: 1.8rem;
-}
-
-
-.blog-text2 h1{
-    font-size: 1.8rem;
-
-}
-
-.blog-text3 h1{
-    font-size: 1.8rem;
-}
-
-.ct{
-    background-color: var(--primary);
-    height: 650px;
-    aspect-ratio: 1/1;
-    width: 50%;
-    padding-top: 24rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-}
-
-.ct-flex{
-    display: flex;
-    justify-content: space-between;
-}
-
-.pt{
-    width: 40%;
-}
-.ct-wrapper{
-    display: flex;
-    gap: 5rem;
-    padding-top: 6rem;
-}
-
-.ct-head h1{
-    font-size: 3.5rem;
-    width: 70%;
-    margin-top: 0%;
-}
-
-.contact{
-width: 200px;
-background-color: var(--primary);
-height: 40px;
-aspect-ratio: 1/8;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 2rem 2rem;
-border-radius: 50px;
-gap: 10px;
-/* width: fit-content; */
-}
-
-
-.bd-top{
-    border-bottom: 4rem;
-    border-top: .1rem solid black;
-    margin-top: 100px;
-}
-
-.social{
-    display: flex;
-    gap: 2rem;
-    padding-top: 8rem;
-}
-
-.footer{
-    display: flex;
-    gap: 35rem;
-    z-index: 1;
-    margin-top: -140px;
-    padding: var(--padding);
-}
-
-.ff{
-    display: flex;
-    /* justify-content: flex-end; */
-    gap: 26rem;
-}
-
-}
